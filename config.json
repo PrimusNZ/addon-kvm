@@ -1,6 +1,6 @@
 {
   "name": "KVM",
-  "version": "0.0.02",
+  "version": "0.0.03",
   "slug": "kvm",
   "legacy": false,
   "init": false,
@@ -10,6 +10,7 @@
   "arch": [
     "amd64"
   ],
+  "full_access": true,
   "map": [
     "media:rw",
     "share:rw"
