@@ -1,0 +1,18 @@
+{
+  "name": "KVM",
+  "version": "0.0.1",
+  "slug": "kvm",
+  "legacy": false,
+  "init": false,
+  "description": "Addon to run a single VM inside HA.",
+  "url": "https://github.com/PrimusNZ/addon-kvm",
+  "startup": "services",
+  "arch": [
+    "amd64"
+  ],
+  "map": [
+    "media:rw"
+  ],
+  "boot": "auto",
+  "image": "ghcr.io/primusnz/hassio-addons/{arch}-kvm"
+}
