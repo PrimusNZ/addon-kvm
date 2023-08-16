@@ -1,5 +1,4 @@
 FROM centos:7
-MAINTAINER BBVA Innovation <eurocloud-oneteam.group@bbva.com>
 ENV container docker
 
 RUN yum clean all \
@@ -10,6 +9,6 @@ RUN yum clean all \
 COPY startvm /usr/local/bin/startvm
 RUN chmod u+x /usr/local/bin/startvm
 
-VOLUME /image
-
 ENTRYPOINT ["/usr/local/bin/startvm"]
+
+LABEL org.opencontainers.image.source https://github.com/PrimusNZ/hassio-addons

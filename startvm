@@ -7,6 +7,7 @@
 
 # If no arguments, the VM will lauch with 4 cores and 1GB of memory
 
+: ${AUTO_ATTACH:='Y'}
 : ${DEBUG:='N'}
 : ${USE_NET_BRIDGES:='N'}
 : ${LAUNCHER:='/usr/libexec/qemu-kvm'}

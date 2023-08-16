@@ -1,6 +1,6 @@
 {
   "name": "KVM",
-  "version": "0.0.1",
+  "version": "0.0.02",
   "slug": "kvm",
   "legacy": false,
   "init": false,
@@ -11,7 +11,11 @@
     "amd64"
   ],
   "map": [
-    "media:rw"
+    "media:rw",
+    "share:rw"
+  ],
+  "privileged": [
+    "NET_ADMIN"
   ],
   "boot": "auto",
   "image": "ghcr.io/primusnz/hassio-addons/{arch}-kvm"
